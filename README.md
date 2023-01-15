@@ -21,4 +21,4 @@ UNIVERSIDAD NACIONAL DE PIURA, PERÚ
 >Programa que permite mostrar los valores alfanuméricos(0-9 y A-F) en un display de 7 segmentos ánodo común, conectados al puerto D. Los valores a mostrar son seleccionados por la siguiente condición: 
 >- Si el botón de la placa no esta presionado, se muestran los valores numéricos del 0 al 9. 
 >- Si el botón de la placa se mantiene presionado, se muestran los valores de A hasta F. 
->Cada valor se muestra con un retardo de 1 segundo entre transición.
+>>Cada valor se muestra con un retardo de 1 segundo entre transición.

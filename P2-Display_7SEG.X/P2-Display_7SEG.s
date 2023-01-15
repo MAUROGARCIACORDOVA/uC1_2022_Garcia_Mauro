@@ -1,6 +1,14 @@
 #include "BIT_CONFIG.inc" 
 #include <xc.inc>
-    
+;AUTOR: MAURO ALDAIR GARCIA CORDOVA                                                                                           
+;FECHA: 14/01/2023                                                                                                            
+;TARJETA: Curiosity Nano PIC18f57q84                                                                                          
+;NOMBRE DEL PROYECTO: P2-Display_7SEG                                                                                    
+;DESCRIPCION: Este programa permite mostrar los valores alfanuméricos(0-9 y A-F) en un display 
+;de 7 segmentos ánodo común, conectados al puerto D. Los valores a mostrar son seleccionados por la siguiente condición:
+;Si el botón de la placa no esta presionado, se muestran los valores numéricos del 0 al 9.
+;Si el botón de la placa se mantiene presionado, se muestran los valores de A hasta F.
+;Cada valor se muestra con un retardo de 1 segundo entre transición. 
 PSECT udata_acs   
 contador1: DS 1           ;reserva un byte en access ram
 contador2: DS 1

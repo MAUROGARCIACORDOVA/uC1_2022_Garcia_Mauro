@@ -1,0 +1,426 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/EJERCICIO_2.o
+ISRVectLowPriority CODE 0 1FFD8 1FFD8 C 1 2
+CODE - 0 0 0 124 1 1
+int0 CODE 0 1FFE4 1FFE4 1C 1 2
+resetVect CODE 0 1FFD4 1FFD4 4 1 2
+udata_acs COMRAM 1 500 500 7 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 124-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 124-1FFD3 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FFD3 1
+CODE 124-1FFD3 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 124-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 507-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FFD3 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/EJERCICIO_2.o
+0 CODE ABS >66:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+4 CODE ABS >67:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+8 CODE ABS >68:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C CODE ABS >69:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+10 CODE ABS >71:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+12 CODE ABS >72:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+14 CODE ABS >73:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+16 CODE ABS >74:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1A CODE ABS >75:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1E CODE ABS >76:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+20 CODE ABS >77:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+24 CODE ABS >78:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+28 CODE ABS >79:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+2C CODE ABS >81:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+2E CODE ABS >82:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+30 CODE ABS >83:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+32 CODE ABS >84:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+34 CODE ABS >85:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+38 CODE ABS >93:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+3A CODE ABS >94:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+3C CODE ABS >95:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+3E CODE ABS >96:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+40 CODE ABS >97:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+42 CODE ABS >98:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+44 CODE ABS >99:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+48 CODE ABS >100:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+4A CODE ABS >101:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+4C CODE ABS >102:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+50 CODE ABS >103:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+52 CODE ABS >104:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+56 CODE ABS >105:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+58 CODE ABS >106:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+5C CODE ABS >107:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+60 CODE ABS >109:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+62 CODE ABS >110:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+64 CODE ABS >111:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+68 CODE ABS >112:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+6C CODE ABS >116:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+6E CODE ABS >117:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+72 CODE ABS >118:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+76 CODE ABS >120:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+78 CODE ABS >121:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+7A CODE ABS >122:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+7C CODE ABS >123:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+7E CODE ABS >124:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+80 CODE ABS >125:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+84 CODE ABS >128:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+86 CODE ABS >129:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+88 CODE ABS >130:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+8A CODE ABS >131:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+8C CODE ABS >132:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+8E CODE ABS >133:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+90 CODE ABS >134:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+92 CODE ABS >135:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+94 CODE ABS >136:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+96 CODE ABS >137:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+98 CODE ABS >138:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+9A CODE ABS >144:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+9C CODE ABS >145:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+9E CODE ABS >146:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+A0 CODE ABS >147:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+A2 CODE ABS >148:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+A4 CODE ABS >149:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+A6 CODE ABS >153:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+A8 CODE ABS >154:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+AA CODE ABS >155:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+AC CODE ABS >156:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+AE CODE ABS >157:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+B0 CODE ABS >160:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+B2 CODE ABS >161:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+B4 CODE ABS >162:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+B6 CODE ABS >163:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+B8 CODE ABS >164:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+BA CODE ABS >167:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+BC CODE ABS >168:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+BE CODE ABS >169:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C0 CODE ABS >170:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C2 CODE ABS >171:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C4 CODE ABS >173:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C6 CODE ABS >177:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+C8 CODE ABS >178:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+CA CODE ABS >179:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+CC CODE ABS >180:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+CE CODE ABS >181:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+D0 CODE ABS >182:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+D2 CODE ABS >183:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+D4 CODE ABS >184:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+D6 CODE ABS >188:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+D8 CODE ABS >189:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+DA CODE ABS >190:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+DC CODE ABS >192:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+DE CODE ABS >193:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+E0 CODE ABS >194:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+E2 CODE ABS >196:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+E4 CODE ABS >197:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+E6 CODE ABS >198:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+E8 CODE ABS >199:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+EA CODE ABS >208:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+EC CODE ABS >209:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+EE CODE ABS >210:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+F0 CODE ABS >211:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+F2 CODE ABS >212:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+F4 CODE ABS >214:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+F6 CODE ABS >215:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+F8 CODE ABS >216:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+FA CODE ABS >219:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+FC CODE ABS >220:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+FE CODE ABS >221:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+100 CODE ABS >224:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+102 CODE ABS >225:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+104 CODE ABS >226:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+106 CODE ABS >228:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+108 CODE ABS >229:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+10A CODE ABS >230:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+10C CODE ABS >232:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+10E CODE ABS >233:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+110 CODE ABS >235:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+112 CODE ABS >236:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+114 CODE ABS >238:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+116 CODE ABS >239:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+118 CODE ABS >240:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+11C CODE ABS >241:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+11E CODE ABS >242:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+122 CODE ABS >243:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFD8 ISRVectLowPriority CODE >52:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFDA ISRVectLowPriority CODE >53:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFDE ISRVectLowPriority CODE >55:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFE0 ISRVectLowPriority CODE >56:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFE2 ISRVectLowPriority CODE >62:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFE4 int0 CODE >21:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFE6 int0 CODE >22:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFEA int0 CODE >24:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFEC int0 CODE >25:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFF0 int0 CODE >28:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFF2 int0 CODE >29:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFF6 int0 CODE >31:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFF8 int0 CODE >34:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFFA int0 CODE >35:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFFE int0 CODE >37:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+1FFD4 resetVect CODE >16:G:\proyectos\PARCIAL_2.X\EJERCICIO_2.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 507 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 124 0 ABS 0 udata_bank5 -
+__Hudata_bank6 124 0 ABS 0 udata_bank6 -
+__Hudata_bank7 124 0 ABS 0 udata_bank7 -
+__Hudata_bank8 124 0 ABS 0 udata_bank8 -
+__Hudata_bank9 124 0 ABS 0 udata_bank9 -
+__HISRVectLowPriority 124 0 ABS 0 ISRVectLowPriority -
+__Hudata_bank10 124 0 ABS 0 udata_bank10 -
+__Hudata_bank11 124 0 ABS 0 udata_bank11 -
+__Hudata_bank12 124 0 ABS 0 udata_bank12 -
+__Hudata_bank13 124 0 ABS 0 udata_bank13 -
+__Hudata_bank14 124 0 ABS 0 udata_bank14 -
+__Hudata_bank15 124 0 ABS 0 udata_bank15 -
+__Hudata_bank16 124 0 ABS 0 udata_bank16 -
+__Hudata_bank17 124 0 ABS 0 udata_bank17 -
+__Hudata_bank18 124 0 ABS 0 udata_bank18 -
+__Hudata_bank19 124 0 ABS 0 udata_bank19 -
+__Hudata_bank20 124 0 ABS 0 udata_bank20 -
+__Hudata_bank21 124 0 ABS 0 udata_bank21 -
+__Hudata_bank22 124 0 ABS 0 udata_bank22 -
+__Hudata_bank23 124 0 ABS 0 udata_bank23 -
+__Hudata_bank24 124 0 ABS 0 udata_bank24 -
+__Hudata_bank25 124 0 ABS 0 udata_bank25 -
+__Hudata_bank26 124 0 ABS 0 udata_bank26 -
+__Hudata_bank27 124 0 ABS 0 udata_bank27 -
+__Hudata_bank28 124 0 ABS 0 udata_bank28 -
+__Hudata_bank29 124 0 ABS 0 udata_bank29 -
+__Hudata_bank30 124 0 ABS 0 udata_bank30 -
+__Hudata_bank31 124 0 ABS 0 udata_bank31 -
+__Hudata_bank32 124 0 ABS 0 udata_bank32 -
+__Hudata_bank33 124 0 ABS 0 udata_bank33 -
+__Hudata_bank34 124 0 ABS 0 udata_bank34 -
+__Hudata_bank35 124 0 ABS 0 udata_bank35 -
+__Hudata_bank36 124 0 ABS 0 udata_bank36 -
+__Hudata_bank37 124 0 ABS 0 udata_bank37 -
+__Hudata_bank38 124 0 ABS 0 udata_bank38 -
+__Hudata_bank39 124 0 ABS 0 udata_bank39 -
+__Hudata_bank40 124 0 ABS 0 udata_bank40 -
+__Hudata_bank41 124 0 ABS 0 udata_bank41 -
+__Hudata_bank42 124 0 ABS 0 udata_bank42 -
+__Hudata_bank43 124 0 ABS 0 udata_bank43 -
+__Hudata_bank44 124 0 ABS 0 udata_bank44 -
+__Hudata_bank45 124 0 ABS 0 udata_bank45 -
+__Hudata_bank46 124 0 ABS 0 udata_bank46 -
+__Hudata_bank47 124 0 ABS 0 udata_bank47 -
+__Hudata_bank48 124 0 ABS 0 udata_bank48 -
+__Hudata_bank49 124 0 ABS 0 udata_bank49 -
+__Hudata_bank50 124 0 ABS 0 udata_bank50 -
+__Hudata_bank51 124 0 ABS 0 udata_bank51 -
+__Hudata_bank52 124 0 ABS 0 udata_bank52 -
+__Hudata_bank53 124 0 ABS 0 udata_bank53 -
+__Hudata_bank54 124 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/EJERCICIO_2.o
+__Hedata 124 0 ABS 0 edata -
+__Hudata 124 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 124 0 ABS 0 edata -
+__Ludata 124 0 ABS 0 udata -
+__HCODE 124 0 ABS 0 CODE -
+__Hcode 124 0 ABS 0 code -
+__Hdata 124 0 ABS 0 data -
+__Hint0 124 0 ABS 0 int0 -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 124 0 ABS 0 code -
+__Ldata 124 0 ABS 0 data -
+__Lint0 124 0 ABS 0 int0 -
+__S0 20000 0 ABS 0 - -
+__S1 507 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 124 0 ABS 0 udata_bank10 -
+__Ludata_bank11 124 0 ABS 0 udata_bank11 -
+__Ludata_bank12 124 0 ABS 0 udata_bank12 -
+__Ludata_bank13 124 0 ABS 0 udata_bank13 -
+__Ludata_bank14 124 0 ABS 0 udata_bank14 -
+__Ludata_bank15 124 0 ABS 0 udata_bank15 -
+__Ludata_bank16 124 0 ABS 0 udata_bank16 -
+__Ludata_bank17 124 0 ABS 0 udata_bank17 -
+__Ludata_bank18 124 0 ABS 0 udata_bank18 -
+__Ludata_bank19 124 0 ABS 0 udata_bank19 -
+__Ludata_bank20 124 0 ABS 0 udata_bank20 -
+__Ludata_bank21 124 0 ABS 0 udata_bank21 -
+__Ludata_bank22 124 0 ABS 0 udata_bank22 -
+__Ludata_bank23 124 0 ABS 0 udata_bank23 -
+__Ludata_bank24 124 0 ABS 0 udata_bank24 -
+__Ludata_bank25 124 0 ABS 0 udata_bank25 -
+__Ludata_bank26 124 0 ABS 0 udata_bank26 -
+__Ludata_bank27 124 0 ABS 0 udata_bank27 -
+__Ludata_bank28 124 0 ABS 0 udata_bank28 -
+__Ludata_bank29 124 0 ABS 0 udata_bank29 -
+__Ludata_bank30 124 0 ABS 0 udata_bank30 -
+__Ludata_bank31 124 0 ABS 0 udata_bank31 -
+__Ludata_bank32 124 0 ABS 0 udata_bank32 -
+__Ludata_bank33 124 0 ABS 0 udata_bank33 -
+__Ludata_bank34 124 0 ABS 0 udata_bank34 -
+__Ludata_bank35 124 0 ABS 0 udata_bank35 -
+__Ludata_bank36 124 0 ABS 0 udata_bank36 -
+__Ludata_bank37 124 0 ABS 0 udata_bank37 -
+__Ludata_bank38 124 0 ABS 0 udata_bank38 -
+__Ludata_bank39 124 0 ABS 0 udata_bank39 -
+__Ludata_bank40 124 0 ABS 0 udata_bank40 -
+__Ludata_bank41 124 0 ABS 0 udata_bank41 -
+__Ludata_bank42 124 0 ABS 0 udata_bank42 -
+__Ludata_bank43 124 0 ABS 0 udata_bank43 -
+__Ludata_bank44 124 0 ABS 0 udata_bank44 -
+__Ludata_bank45 124 0 ABS 0 udata_bank45 -
+__Ludata_bank46 124 0 ABS 0 udata_bank46 -
+__Ludata_bank47 124 0 ABS 0 udata_bank47 -
+__Ludata_bank48 124 0 ABS 0 udata_bank48 -
+__Ludata_bank49 124 0 ABS 0 udata_bank49 -
+__Ludata_bank50 124 0 ABS 0 udata_bank50 -
+__Ludata_bank51 124 0 ABS 0 udata_bank51 -
+__Ludata_bank52 124 0 ABS 0 udata_bank52 -
+__Ludata_bank53 124 0 ABS 0 udata_bank53 -
+__Ludata_bank54 124 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/EJERCICIO_2.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 124 0 ABS 0 resetVect -
+__Ludata_bank5 124 0 ABS 0 udata_bank5 -
+__Ludata_bank6 124 0 ABS 0 udata_bank6 -
+__Ludata_bank7 124 0 ABS 0 udata_bank7 -
+__Ludata_bank8 124 0 ABS 0 udata_bank8 -
+__Ludata_bank9 124 0 ABS 0 udata_bank9 -
+__LresetVect 124 0 ABS 0 resetVect -
+__LISRVectLowPriority 124 0 ABS 0 ISRVectLowPriority -
+__Hudata_acs 124 0 ABS 0 udata_acs -
+__Ludata_acs 124 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+ISRVectLowPriority 0 1FFD8 1FFD8 C 1
+int0 0 1FFE4 1FFE4 1C 1
+resetVect 0 1FFD4 1FFD4 4 1
+udata_acs 1 500 500 7 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
